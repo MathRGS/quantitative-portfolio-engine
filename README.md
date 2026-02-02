@@ -48,7 +48,7 @@ Uma plataforma Fullstack de finanças quantitativas desenvolvida para simular, o
 
 1. **Clone o repositório:**
    ```bash
-   git clone [https://github.com/SEU_USUARIO/portfolio-optimizer.git](https://github.com/SEU_USUARIO/portfolio-optimizer.git)
+   git clone [https://github.com/MathRGS/quantitative-portfolio-engine.git](https://github.com/MathRGS/quantitative-portfolio-engine.git)
    cd portfolio-optimizer
 
 2. **Configure as variáveis de ambiente:**
@@ -76,9 +76,9 @@ Este projeto implementa a **Otimização de Média-Variância de Markowitz**. O 
 Unindo finanças quantitativas e engenharia de software para construir soluções **fintech escaláveis**.
 
 🔗 Conecte-se:
-- LinkedIn: https://www.linkedin.com/in/matheus-rocha-4a616320a/  
-- Portfólio: https://matheusrocha.cloud  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/matheus-rocha-4a616320a/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-100000?style=for-the-badge&logo=google-chrome&logoColor=white)](https://matheusrocha.cloud)
 
 ---
 
-© 2026 Credit Risk Intelligence Platform. Todos os direitos reservados.
+© 2026 Quantitative Portfolio Optimizer. Todos os direitos reservados.
