@@ -1,0 +1,56 @@
+# ===========================
+# 1. DEPENDÊNCIAS & LOGS (Geral)
+# ===========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.pnp
+.pnp.js
+
+# ===========================
+# 2. FRONTEND (Next.js / React)
+# ===========================
+/.next/
+/out/
+/build/
+/dist/
+/.vercel
+*.tsbuildinfo
+next-env.d.ts
+
+# ===========================
+# 3. BACKEND (Python / FastAPI)
+# ===========================
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+# Ambientes Virtuais
+venv/
+.venv/
+env/
+
+# ===========================
+# 4. SEGURANÇA & AMBIENTE (CRUCIAL)
+# ===========================
+# Ignora todos os arquivos que começam com .env
+.env
+.env.*
+
+# ! Mas NÃO ignora o arquivo de exemplo (importante para outros devs)
+!.env.example
+
+# Chaves e certificados
+*.pem
+*.key
+
+# ===========================
+# 5. SISTEMA OPERACIONAL & IDEs
+# ===========================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+/coverage/
