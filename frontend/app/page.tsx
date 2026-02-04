@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import axios from 'axios';
 import { Search, AlertCircle, Loader2, Activity, BarChart3, Sparkles, Target, Printer, Percent, MousePointerClick, LayoutDashboard, Database, Github, Linkedin, Mail } from 'lucide-react';
 import { generatePortfolios, PortfolioPoint } from '../src/lib/finance';
@@ -12,6 +12,14 @@ import RiskAnalysis from '../src/components/RiskAnalysis';
 import DataAudit from '../src/components/DataAudit';
 
 export default function Home() {
+  const [dataTexto, setDataTexto] = useState<string | null>(null);
+
+  useEffect(() => {
+    const now = new Date();
+    const texto = `Gerado em: ${now.toLocaleDateString('pt-BR')} às ${now.toLocaleTimeString('pt-BR').slice(0, 5)}`;
+    setDataTexto(texto);
+  }, []);
+
   const tickersRef = useRef<HTMLInputElement>(null);
   const riskFreeRef = useRef<HTMLInputElement>(null);
 
@@ -100,7 +108,9 @@ export default function Home() {
         <div className="text-right">
           <p className="text-slate-900 font-bold text-lg">Matheus Rocha</p>
           <p className="text-slate-500 text-sm font-mono uppercase tracking-wider">Quantitative Portfolio Engine</p>
-          <p className="text-slate-400 text-xs mt-1">Gerado em: {new Date().toLocaleDateString()} às {new Date().toLocaleTimeString().slice(0, 5)}</p>
+          <p className="text-slate-400 text-xs mt-1 min-h-[1.5em]">
+            {dataTexto}
+          </p>
         </div>
       </div>
 
@@ -387,7 +397,7 @@ export default function Home() {
                     Interessado em implementar modelos quantitativos na sua empresa? Vamos conversar.
                   </p>
                   <a
-                    href="mailto:seu@email.com"
+                    href="mailto:matheunho29@gmail.com"
                     className="inline-flex items-center gap-2 text-white font-semibold border-b border-blue-500 pb-0.5 hover:text-blue-400 hover:border-blue-400 transition-colors"
                   >
                     <Mail className="w-4 h-4" />
